@@ -1,0 +1,12 @@
+{
+  "name": "query-parser",
+  "version": "0.0.1",
+  "scripts": {
+    "compile": "nearleyc ./query-parser.ne -o query-parser.js",
+    "test": "nearley-test query-parser.js -- -i",
+    "graph": "nearley-railroad ./query-parser.ne -o query-parser.htm"
+  },
+  "dependencies": {
+    "nearley": "^2.13.0"
+  }
+}
